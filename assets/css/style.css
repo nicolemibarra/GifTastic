@@ -5,13 +5,15 @@ body {
 }
 
 h1 {
-	color: white;
+	color: white;	
 }
 
 .container {
 	background-color: teal;
 	opacity: 0.95;
 	border: orangered 10px solid;
+	width: 98%;
+	height: 100%;
 }
 
 #add-sports {
@@ -28,10 +30,10 @@ button {
 	background-color: orangered;
 	color: white;
 }
+
 .all-gifs {
-	display: table;
-	height: 100%;
-	width: 100%;
-	float: left;
+	display: inline-block;
 }
+
+
 
