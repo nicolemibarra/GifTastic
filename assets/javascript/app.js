@@ -3,7 +3,7 @@ $(document).ready(function() {
 var topics = ["Archery", "Baseball", "Basketball", "Boxing", "Hockey", "Football", "Golf", "Softball", "Soccer", "Swimming"];
 
 function renderButtons() {
-  
+
   $("#buttonSports").empty();
   
   for (var i = 0; i < topics.length; i++) {
@@ -45,7 +45,7 @@ function showGifs() {
     
     $("#gifRowOne").empty();
     $("#gifRowTwo").empty();
-    $("#gifRowThree").empty();
+    
            
     $.ajax({
     url: queryGiphy,
@@ -56,7 +56,7 @@ function showGifs() {
     
       for(i=0; i<giphyArray.length; i++){
         
-        var sportsGifs = $('<div class="col-sm-9">');
+        var sportsGifs = $('<div class="col-sm-2">');
         var paragraphOne = $("<p>").text("Rating: " + giphyArray[i].rating);
         var sportsImage = $('<img data-state="still">')
 
@@ -67,15 +67,12 @@ function showGifs() {
         
         sportsGifs.append(sportsImage);
         sportsGifs.append(paragraphOne);
-        //Get gifs to fit on page properly
+        
         if (i < 5){
           $('#gifRowOne').append(sportsGifs)
         }
-        else if (i > 6 && i < 10) { 
+        else if (i > 4 && i < 10){ 
           $('#gifRowTwo').append(sportsGifs)
-        }
-        else if (i > 11 && i < 15) { 
-          $('#gifRowThree').append(sportsGifs)
         }
       };
     })
@@ -95,4 +92,6 @@ $(document).on("click", ".gif", function(){
     $(this).attr("data-state", "still");
   }
 })
+
+
 
