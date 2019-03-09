@@ -1,0 +1,37 @@
+body {
+	background-image: url(https://previews.123rf.com/images/tatishdesign/tatishdesign1506/tatishdesign150600054/41900051-hand-drawn-doodle-sport-background-vector-cartoon-pattern-with-sport-icons.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+h1 {
+	color: white;
+}
+
+.container {
+	background-color: teal;
+	opacity: 0.95;
+	border: orangered 10px solid;
+}
+
+#add-sports {
+	background-color: orangered;
+	color: white;
+}
+
+#sports-input {
+	background-color: white;
+	color: orangered;
+}
+
+button {
+	background-color: orangered;
+	color: white;
+}
+.all-gifs {
+	display: table;
+	height: 100%;
+	width: 100%;
+	float: left;
+}
+
